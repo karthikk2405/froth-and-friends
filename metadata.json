@@ -1,0 +1,8 @@
+{
+  "name": "Remix Froth \u0026 Friends",
+  "description": "Vijayawada\u0027s premier specialty café and hangout bistro. Handcrafted coffees, thick shakes, mocktails, loaded fries, sizzling appetizers, and table reservations. Contact +91 97059 81111.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
