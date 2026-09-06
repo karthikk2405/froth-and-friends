@@ -67,7 +67,10 @@ export const ItemCustomizeModal: React.FC<ItemCustomizeModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/70 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-fadeIn">
+    <div 
+      onClick={onClose}
+      className="fixed inset-0 z-50 overflow-y-auto bg-black/70 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-fadeIn"
+    >
       <div 
         className="relative bg-[#FBFBF6] rounded-3xl max-w-lg w-full border-2 border-[#141512] shadow-[8px_8px_0px_#141512] overflow-hidden max-h-[92vh] flex flex-col"
         onClick={(e) => e.stopPropagation()}

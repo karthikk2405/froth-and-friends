@@ -22,6 +22,8 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   onRemoveItem,
   onClearCart,
 }) => {
+  if (!isOpen) return null;
+
   const [orderType, setOrderType] = useState<'dinein' | 'takeaway'>('dinein');
   const [outlet, setOutlet] = useState<string>('Ramavarappadu Flagship (Near Fun Times Club)');
   const [tableNumber, setTableNumber] = useState<string>('Table 4');
@@ -122,7 +124,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden bg-black/70 backdrop-blur-xs flex justify-end animate-fadeIn">
+    <div 
+      onClick={onClose}
+      className="fixed inset-0 z-50 overflow-hidden bg-black/70 backdrop-blur-xs flex justify-end animate-fadeIn"
+    >
       
       <div 
         className="w-full max-w-md bg-[#FBFBF6] h-full shadow-2xl flex flex-col border-l-2 border-[#141512] relative animate-slideLeft"
